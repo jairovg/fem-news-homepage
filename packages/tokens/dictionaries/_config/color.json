@@ -1,0 +1,32 @@
+{
+  "config": {
+    "color": {
+      "primary": {
+        "red": {
+          "light": {
+            "value": "#f15d51"
+          }
+        },
+        "yellow": {
+          "light": {
+            "value": "#e9aa52"
+          }
+        }
+      },
+      "neutral": {
+        "lightest": {
+          "value": "#fffdfa"
+        },
+        "dark": {
+          "value": "#c5c6ce"
+        },
+        "darker": {
+          "value": "#5e607a"
+        },
+        "darkest": {
+          "value": "#00001a"
+        }
+      }
+    }
+  }
+}

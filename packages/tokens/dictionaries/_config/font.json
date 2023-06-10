@@ -1,0 +1,27 @@
+{
+  "config": {
+    "font": {
+      "family": {
+        "sans": {
+          "value": "'Inter', sans-serif"
+        }
+      },
+      "style": {
+        "normal": {
+          "value": "normal"
+        }
+      },
+      "weight": {
+        "regular": {
+          "value": "400"
+        },
+        "bold": {
+          "value": "700"
+        },
+        "bolder": {
+          "value": "800"
+        }
+      }
+    }
+  }
+}
