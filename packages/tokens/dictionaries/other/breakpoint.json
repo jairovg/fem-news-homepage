@@ -1,0 +1,16 @@
+{
+  "breakpoint": {
+    "xs": {
+      "value": "37.5em"
+    },
+    "sm": {
+      "value": "76.8em"
+    },
+    "md": {
+      "value": "102.4em"
+    },
+    "lg": {
+      "value": "144.0em"
+    }
+  }
+}
