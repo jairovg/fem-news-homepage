@@ -1,0 +1,25 @@
+{
+  "name": "@fem-news/static-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "prebuild": "rimraf dist",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fem-news/tokens": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "rimraf": "^5.0.1",
+    "sass": "^1.63.3",
+    "vite": "^4.3.9"
+  }
+}
