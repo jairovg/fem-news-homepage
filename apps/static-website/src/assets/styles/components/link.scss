@@ -1,0 +1,17 @@
+@use '@/assets/styles/mixins' as *;
+
+.link {
+  @extend %color-animation;
+
+  &__primary {
+    color: var(--fem-color-text-link-primary-rest);
+
+    &:is(:hover, :focus) {
+      color: var(--fem-color-text-link-primary-active);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--fem-color-border-link-primary-focus);
+    }
+  }
+}

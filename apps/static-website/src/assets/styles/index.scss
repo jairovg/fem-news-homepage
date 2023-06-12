@@ -3,3 +3,8 @@
 @use 'utils';
 @use 'global';
 @use 'layout';
+
+// The following uses would become in module imports
+@use 'components/header';
+@use 'components/nav';
+@use 'components/drawer';

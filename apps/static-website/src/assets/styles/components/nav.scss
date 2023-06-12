@@ -1,0 +1,67 @@
+@use '@fem-news/tokens/dist/scss/mixins' as *;
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
+.nav {
+  $nav: &;
+  display: grid;
+  grid-auto-rows: min-content;
+  visibility: hidden;
+
+  @media only screen and (min-width: 68.267em) {
+    visibility: visible;
+  }
+
+  &--opened {
+    #{$nav}__toggle {
+      justify-self: end;
+      margin-top: 0.8rem;
+
+      &::before {
+        mask-image: url('@/assets/icons/icon-menu-close.svg');
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+
+    #{$nav}__items {
+      display: flex;
+    }
+  }
+
+  &__toggle {
+    visibility: visible;
+
+    @media only screen and (min-width: 68.267em) {
+      display: none;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      mask-image: url('@/assets/icons/icon-menu.svg');
+      height: 1.7rem;
+      width: 4rem;
+      background-color: var(--fem-color-text-secondary);
+    }
+  }
+
+  &__items {
+    display: none;
+    flex-direction: column;
+    gap: 2.4rem 4rem;
+    margin-top: 8.36rem;
+    padding: 0 0.4rem;
+
+    @media only screen and (min-width: 68.267em) {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    @media only screen and (min-width: 68.267em) {
+      color: var(--fem-color-text-primary);
+    }
+  }
+}

@@ -31,7 +31,71 @@
       href="./assets/styles/index.scss"
     />
 
+    <script
+      defer="defer"
+      type="module"
+      src="./index.js"
+    ></script>
+
     <title>News homepage | Frontend Mentor</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header section">
+      <img
+        src="./assets/icons/logo.svg"
+        alt="News logo"
+        class="header__logo"
+      />
+      <nav
+        id="nav"
+        class="header__nav nav js-nav"
+        aria-label="Page navigation"
+      >
+        <button
+          class="nav__toggle js-nav-toggle"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle main navigation</span>
+        </button>
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a
+              href=""
+              class="nav__link link link__primary"
+              >Home</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href=""
+              class="nav__link link link__primary"
+              >New</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href=""
+              class="nav__link link link__primary"
+              >Popular</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href=""
+              class="nav__link link link__primary"
+              >Trending</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href=""
+              class="nav__link link link__primary"
+              >Categories</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

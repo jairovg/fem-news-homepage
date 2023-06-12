@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.8rem 0 3.2rem;
+
+  @media only screen and (min-width: 68.267em) {
+    padding: 8.9rem 0 5.5rem;
+  }
+
+  &__logo {
+    width: 4.5rem;
+
+    @media only screen and (min-width: 68.267em) {
+      width: auto;
+    }
+  }
+}

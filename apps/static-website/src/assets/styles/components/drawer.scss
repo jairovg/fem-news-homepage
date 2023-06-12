@@ -1,0 +1,27 @@
+.drawer {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 25.6rem;
+  padding: 2rem;
+  visibility: visible;
+  transform: translateX(200%);
+  z-index: 1;
+  background-color: var(--fem-color-background-primary);
+  color: var(--fem-color-text-secondary);
+
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: #00001a88;
+  }
+
+  &--animate {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--opened {
+    transform: translateX(0);
+  }
+}
