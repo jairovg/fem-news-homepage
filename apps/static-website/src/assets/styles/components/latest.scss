@@ -1,0 +1,37 @@
+@use '@fem-news/tokens/dist/scss/mixins' as *;
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
+.latest {
+  padding: 2.4rem 2rem;
+  background-color: var(--fem-color-background-secondary);
+
+  @media only screen and (min-width: 68.267em) {
+    padding: 3.2rem 2.4rem;
+  }
+
+  &__title {
+    margin-bottom: 3.4rem;
+    color: var(--fem-color-text-secondary-inverted);
+
+    @extend %fem-text-heading-sans-300;
+  }
+
+  &__items {
+    display: grid;
+    gap: 6rem;
+  }
+
+  &__item {
+    position: relative;
+    & + & {
+      &::before {
+        position: absolute;
+        content: '';
+        top: -30px;
+        height: 1px;
+        width: 100%;
+        border-top: 1px solid var(--fem-color-text-primary);
+      }
+    }
+  }
+}

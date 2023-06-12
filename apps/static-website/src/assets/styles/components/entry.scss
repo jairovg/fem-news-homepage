@@ -1,0 +1,22 @@
+@use '@fem-news/tokens/dist/scss/mixins' as *;
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+@use '@/assets/styles/mixins' as *;
+
+.entry {
+  $entry: &;
+  display: grid;
+  gap: 0.8rem 2.4rem;
+
+  &__title {
+    @extend %fem-text-heading-sans-100;
+  }
+
+  &__title--200 {
+    line-height: $fem-text-heading-sans-200-height;
+    font-size: $fem-text-heading-sans-200-size;
+  }
+
+  &__body--inverted {
+    color: var(--fem-color-text-primary-inverted);
+  }
+}
