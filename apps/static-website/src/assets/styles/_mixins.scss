@@ -1,0 +1,12 @@
+%image-cover {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+}
+
+%color-animation {
+  transition: box-shadow 0.2s cubic-bezier(0.15, 0, 0.15, 0),
+    background-color 0.2s cubic-bezier(0.15, 0, 0.15, 0),
+    color 0.2s cubic-bezier(0.15, 0, 0.15, 0);
+}
