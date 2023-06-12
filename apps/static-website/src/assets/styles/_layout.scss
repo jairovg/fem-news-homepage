@@ -1,0 +1,8 @@
+.section {
+  max-width: 110rem;
+  margin: 0 1.6rem;
+
+  @media only screen and (min-width: 68.267em) {
+    margin: 0 auto;
+  }
+}
