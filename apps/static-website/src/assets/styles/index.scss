@@ -5,7 +5,10 @@
 @use 'layout';
 
 // The following uses would become in module imports
+@use 'components/button';
 @use 'components/link';
 @use 'components/header';
 @use 'components/nav';
 @use 'components/drawer';
+@use 'components/main';
+@use 'components/hero';
