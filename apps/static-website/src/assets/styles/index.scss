@@ -5,6 +5,7 @@
 @use 'layout';
 
 // The following uses would become in module imports
+@use 'components/link';
 @use 'components/header';
 @use 'components/nav';
 @use 'components/drawer';
