@@ -1,0 +1,27 @@
+@use '@fem-news/tokens/dist/scss/mixins' as *;
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
+.highlights {
+  &__items {
+    display: grid;
+    gap: 3.2rem;
+
+    @media only screen and (min-width: 68.267em) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    counter-increment: count 1;
+
+    &::before {
+      position: absolute;
+      content: counter(count, decimal-leading-zero);
+      margin-left: 12.4rem;
+
+      @extend %fem-text-heading-sans-300;
+    }
+  }
+}

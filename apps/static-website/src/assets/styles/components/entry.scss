@@ -7,6 +7,23 @@
   display: grid;
   gap: 0.8rem 2.4rem;
 
+  &--w-img {
+    grid-template-columns: 10rem auto;
+
+    &::before {
+      content: '.';
+      visibility: hidden;
+
+      @extend %fem-text-heading-sans-300;
+    }
+  }
+
+  &__image {
+    grid-row: 1 / span 3;
+
+    @extend %image-cover;
+  }
+
   &__title {
     @extend %fem-text-heading-sans-100;
   }
