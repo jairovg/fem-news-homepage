@@ -1,0 +1,12 @@
+{
+  "color": {
+    "background": {
+      "primary": {
+        "value": "{config.color.neutral.lightest.value}"
+      },
+      "secondary": {
+        "value": "{config.color.neutral.darkest.value}"
+      }
+    }
+  }
+}

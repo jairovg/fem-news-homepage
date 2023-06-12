@@ -1,0 +1,18 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "value": "{config.color.neutral.darker.value}"
+      },
+      "primary-inverted": {
+        "value": "{config.color.neutral.dark.value}"
+      },
+      "secondary": {
+        "value": "{config.color.neutral.darkest.value}"
+      },
+      "secondary-inverted": {
+        "value": "{config.color.primary.yellow.light.value}"
+      }
+    }
+  }
+}
