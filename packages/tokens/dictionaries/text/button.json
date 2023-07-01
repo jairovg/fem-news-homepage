@@ -19,7 +19,7 @@
         },
         "height": {
           "property": "line-height",
-          "value": "{config.font.height.400.value}",
+          "value": "{config.font.height.100.value}",
           "mixin": true
         },
         "size": {

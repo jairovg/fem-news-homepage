@@ -20,7 +20,7 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.300.value}",
+            "value": "{config.font.height.100.value}",
             "mixin": true
           },
           "size": {
@@ -47,7 +47,7 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.200.value}",
+            "value": "{config.font.height.100.value}",
             "mixin": true
           },
           "size": {
@@ -74,7 +74,7 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.100.value}",
+            "value": "{config.font.height.300.value}",
             "mixin": true
           },
           "size": {
@@ -101,7 +101,7 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.100.value}",
+            "value": "{config.font.height.400.value}",
             "mixin": true
           },
           "size": {
@@ -128,7 +128,7 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.100.value}",
+            "value": "{config.font.height.500.value}",
             "mixin": true
           },
           "size": {
