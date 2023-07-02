@@ -5,8 +5,8 @@ const NAV_TOGGLE_SELECTOR = '.js-nav-toggle';
 const ARIA_EXPANDED = 'aria-expanded';
 const NAV_OPENED_CLASS = 'nav--opened';
 
-const nav = document?.querySelector(NAV_SELECTOR);
-const navToggleBtn = document?.querySelector(NAV_TOGGLE_SELECTOR);
+const nav: HTMLElement = document?.querySelector(NAV_SELECTOR);
+const navToggleBtn: HTMLElement = document?.querySelector(NAV_TOGGLE_SELECTOR);
 
 let isOpen = false;
 
@@ -27,5 +27,5 @@ navToggleBtn.addEventListener('click', () => {
   toggle();
 
   isOpen = !isOpen;
-  navToggleBtn.setAttribute(ARIA_EXPANDED, isOpen);
+  navToggleBtn.setAttribute(ARIA_EXPANDED, isOpen.toString());
 });

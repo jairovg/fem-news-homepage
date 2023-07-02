@@ -1,9 +1,16 @@
+type DrawerInitOptions = {
+  containerSelector: string;
+  toggleSelector: string;
+  mobileQuery: string;
+  onToggled: (isOpen: boolean) => void;
+};
+
 const body = document?.body;
-const matchMedia = window?.matchMedia || (() => {});
-let drawerContainer;
-let drawerToggleBtn;
+const matchMedia = window.matchMedia;
+let drawerContainer: HTMLElement;
+let drawerToggleBtn: HTMLElement;
 let isOpen = false;
-let onToggled = () => {};
+let onToggled: DrawerInitOptions['onToggled'];
 
 const DRAWER_CLASS = 'drawer';
 const DRAWER_OPENED_CLASS = `${DRAWER_CLASS}--opened`;
@@ -17,8 +24,8 @@ export const init = ({
   containerSelector,
   toggleSelector,
   mobileQuery,
-  onToggled: onToggledFn = () => {},
-}) => {
+  onToggled: onToggledFn,
+}: DrawerInitOptions): boolean => {
   if (drawerContainer) return false;
 
   onToggled = onToggledFn;
@@ -30,13 +37,15 @@ export const init = ({
 
   if (mobileQuery) {
     const mql = matchMedia(mobileQuery);
-    const mediaHandler = ({ matches }) => {
+    const mediaHandler = ({
+      matches,
+    }: MediaQueryListEvent | MediaQueryList) => {
       if (matches && isOpen) {
         toggle();
       }
     };
 
-    mql.addListener(mediaHandler);
+    mql.addEventListener('change', mediaHandler);
     mediaHandler(mql);
   }
 
@@ -53,7 +62,7 @@ export const init = ({
 };
 
 export const toggle = () => {
-  if (!drawerContainer) return false;
+  if (!drawerContainer) return;
 
   if (!isOpen) {
     isOpen = true;
