@@ -14,6 +14,11 @@
     color: var(--fem-color-text-secondary-inverted);
 
     @extend %fem-text-heading-sans-300;
+
+    @media only screen and (min-width: 68.267em) {
+      line-height: $fem-text-heading-sans-400-height;
+      font-size: $fem-text-heading-sans-400-size;
+    }
   }
 
   &__items {

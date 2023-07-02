@@ -19,12 +19,12 @@
         },
         "height": {
           "property": "line-height",
-          "value": "{config.font.height.100.value}",
+          "value": "{config.font.height.200.value}",
           "mixin": true
         },
         "size": {
           "property": "font-size",
-          "value": "{config.font.size.400.value}",
+          "value": "{config.font.size.200.value}",
           "mixin": true
         }
       }
