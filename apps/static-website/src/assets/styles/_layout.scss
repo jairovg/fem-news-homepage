@@ -1,6 +1,8 @@
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
 .section {
-  max-width: 110rem;
-  margin: 0 1.6rem;
+  max-width: $fem-size-offset-2200;
+  margin: 0 $fem-size-offset-600;
 
   @media only screen and (min-width: 68.267em) {
     margin: 0 auto;

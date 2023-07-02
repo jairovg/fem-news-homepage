@@ -4,11 +4,11 @@
 .highlights {
   &__items {
     display: grid;
-    gap: 3.2rem;
+    gap: $fem-size-offset-1100;
 
     @media only screen and (min-width: 68.267em) {
       grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
+      gap: $fem-size-offset-1000;
     }
   }
 
@@ -19,7 +19,7 @@
     &::before {
       position: absolute;
       content: counter(count, decimal-leading-zero);
-      margin-left: 12.4rem;
+      margin-left: 7.75rem;
 
       @extend %fem-text-heading-sans-300;
     }

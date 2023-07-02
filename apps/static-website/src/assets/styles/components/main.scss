@@ -1,13 +1,15 @@
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
 .main {
   display: grid;
-  gap: 6.4rem;
-  max-width: 110rem;
-  padding-bottom: 8rem;
+  gap: $fem-size-offset-1700;
+  max-width: $fem-size-offset-2200;
+  padding-bottom: $fem-size-offset-1900;
 
   @media only screen and (min-width: 68.267em) {
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: min-content;
-    gap: 7.1rem 3rem;
+    gap: $fem-size-offset-1800 $fem-size-offset-1000;
   }
 
   &__highlights {

@@ -1,10 +1,12 @@
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
 .drawer {
   position: fixed;
   height: 100vh;
   top: 0;
   right: 0;
-  width: 25.6rem;
-  padding: 2rem;
+  width: 16rem;
+  padding: $fem-size-offset-700;
   visibility: visible;
   transform: translateX(200%);
   z-index: 1;

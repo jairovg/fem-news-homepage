@@ -1,15 +1,17 @@
+@use '@fem-news/tokens/dist/scss/tokens' as *;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.8rem 0 3.2rem;
+  padding: $fem-size-offset-900 0 $fem-size-offset-1100;
 
   @media only screen and (min-width: 68.267em) {
-    padding: 8.9rem 0 5.5rem;
+    padding: $fem-size-offset-2100 0 $fem-size-offset-1500;
   }
 
   &__logo {
-    width: 4.5rem;
+    width: $fem-size-offset-1400;
 
     @media only screen and (min-width: 68.267em) {
       width: auto;

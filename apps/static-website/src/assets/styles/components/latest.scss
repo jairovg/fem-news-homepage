@@ -2,15 +2,15 @@
 @use '@fem-news/tokens/dist/scss/tokens' as *;
 
 .latest {
-  padding: 2.4rem 2rem;
+  padding: $fem-size-offset-800 $fem-size-offset-700;
   background-color: var(--fem-color-background-secondary);
 
   @media only screen and (min-width: 68.267em) {
-    padding: 3.2rem 2.4rem;
+    padding: $fem-size-offset-1100 $fem-size-offset-800;
   }
 
   &__title {
-    margin-bottom: 3.4rem;
+    margin-bottom: $fem-size-offset-1200;
     color: var(--fem-color-text-secondary-inverted);
 
     @extend %fem-text-heading-sans-300;
@@ -18,7 +18,7 @@
 
   &__items {
     display: grid;
-    gap: 6rem;
+    gap: $fem-size-offset-1600;
   }
 
   &__item {
@@ -27,7 +27,7 @@
       &::before {
         position: absolute;
         content: '';
-        top: -30px;
+        top: -$fem-size-offset-1000;
         height: 1px;
         width: 100%;
         border-top: 1px solid var(--fem-color-text-primary);

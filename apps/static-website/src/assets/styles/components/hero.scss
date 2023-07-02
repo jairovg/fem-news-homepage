@@ -4,12 +4,12 @@
 
 .hero {
   display: grid;
-  gap: 2.4rem;
+  gap: $fem-size-offset-800;
 
   @media only screen and (min-width: 68.267em) {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: min-content;
-    gap: 3rem;
+    gap: $fem-size-offset-1000;
   }
 
   &__picture {
@@ -35,7 +35,7 @@
   }
 
   &__description {
-    margin-top: -0.8rem;
+    margin-top: -$fem-size-offset-400;
 
     @media only screen and (min-width: 68.267em) {
       margin-top: 0;

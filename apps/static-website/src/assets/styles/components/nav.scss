@@ -14,12 +14,12 @@
   &--opened {
     #{$nav}__toggle {
       justify-self: end;
-      margin-top: 0.8rem;
+      margin-top: $fem-size-offset-400;
 
       &::before {
         mask-image: url('@/assets/icons/icon-menu-close.svg');
-        height: 3rem;
-        width: 3rem;
+        height: $fem-size-offset-1000;
+        width: $fem-size-offset-1000;
       }
     }
 
@@ -39,8 +39,8 @@
       display: block;
       content: '';
       mask-image: url('@/assets/icons/icon-menu.svg');
-      height: 1.7rem;
-      width: 4rem;
+      height: $fem-size-offset-600;
+      width: $fem-size-offset-1300;
       background-color: var(--fem-color-text-secondary);
     }
   }
@@ -48,9 +48,9 @@
   &__items {
     display: none;
     flex-direction: column;
-    gap: 2.4rem 4rem;
-    margin-top: 8.36rem;
-    padding: 0 0.4rem;
+    gap: $fem-size-offset-800 $fem-size-offset-1300;
+    margin-top: $fem-size-offset-2000;
+    padding: 0 $fem-size-offset-300;
 
     @media only screen and (min-width: 68.267em) {
       display: flex;

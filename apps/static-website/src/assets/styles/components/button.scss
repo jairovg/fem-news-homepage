@@ -7,7 +7,7 @@
   width: fit-content;
 
   &__primary {
-    padding: 1.1rem 3.1rem;
+    padding: $fem-size-offset-500 $fem-size-offset-1000;
     background-color: var(--fem-color-background-button-primary-rest);
     color: var(--fem-color-text-button-primary-rest);
     box-shadow: inset 0 0 0 2px var(--fem-color-border-button-primary-rest),

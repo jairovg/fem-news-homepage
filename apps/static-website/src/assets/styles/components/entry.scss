@@ -5,10 +5,10 @@
 .entry {
   $entry: &;
   display: grid;
-  gap: 0.8rem 2.4rem;
+  gap: $fem-size-offset-400 $fem-size-offset-800;
 
   &--w-img {
-    grid-template-columns: 10rem auto;
+    grid-template-columns: 6.25rem auto;
 
     &::before {
       content: '.';
