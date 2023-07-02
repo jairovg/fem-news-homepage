@@ -49,7 +49,8 @@ export const init = ({
     mediaHandler(mql);
   }
 
-  drawerContainer?.addEventListener('transitionend', (e) => {
+  drawerContainer?.addEventListener('transitionend', (evt: TransitionEvent) => {
+    if (evt.target !== drawerContainer) return;
     if (!isOpen) {
       body.removeChild(drawerBackdrop);
       onToggled(isOpen);
